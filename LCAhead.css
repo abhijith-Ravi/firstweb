@@ -1,0 +1,162 @@
+
+.header{
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+position: fixed;
+top:0;
+right: 0;
+left: 0;
+background-color:grey;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: rgb(222, 221, 221);
+z-index: 100;
+}  
+.left{
+display: flex;
+align-items: center;
+}
+
+.middle{
+
+  flex: 1;
+  margin-left:70px;
+  margin-right: 45px;
+ max-width: 500px;
+ display: flex;
+ align-items: center;
+  }
+.search-bar{
+  flex: 1;
+  height: 37px;
+  padding-left: 10px;
+  font-size: 16px;
+border:1px solid rgb(192, 192, 192);
+border-radius: 2px;
+box-shadow: inset 1px 2px 3px rgba(0, 0,0,0.15);
+width: 0px;
+}
+.right{
+  margin-right:24px ;
+  
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.threedot{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+}
+.lca-logo{
+  height: 45px;
+  width: 150px;
+  border-radius: 10px;
+
+}
+.search-button{
+  height:40px;
+  width: 60px;
+  border-width: 1px;
+  border-style: solid;
+border-color:  rgb(144, 144, 144);
+margin-right: 5px;
+margin-left: -1px;
+position: relative;
+}
+.search-button:hover{
+  background-color: rgb(230, 230, 230);
+}
+.mic{
+  
+  height:40px;
+  width:40px;
+
+  border: none;
+  border-radius: 20px;
+
+}
+.mic-button{
+  height: 24px;
+  
+}
+
+.search-bar::placeholder{
+  font-family:Roboto,Arial;
+  font-size: 16px;
+ 
+}
+.search-icon{
+  height: 25px;
+  
+}
+.upload{
+height: 24px;
+}
+.youtube-apps{
+  height: 24px;
+}
+.notifications{
+  height: 24px;
+  
+
+}
+.my-channel{
+height: 34px;
+border-radius: 60px; 
+
+}
+.notifications-icon-container{
+  position: relative;
+}
+.container{
+  position: absolute;
+  right: 0;
+  top: -2px;
+  font-size: 8px;
+  background-color: red;
+  font-family: Roboto,Arial;
+  color: white;
+  border-radius: 24px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.search-button .tooltip,
+.mic .searchvoice,
+.create-container .tooltip{
+  font-family: Roboto,Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+
+}
+.search-button:hover .tooltip,
+.mic:hover .searchvoice,
+.create-container:hover .tooltip{
+  opacity: 1;
+}
+.search-button,.mic,.create-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
